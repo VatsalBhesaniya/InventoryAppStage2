@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/categories">
+            <menu>
+                <item
+                    android:id="@+id/category_all"
+                    android:title="@string/category_all" />
+                <item android:title="@string/category_novel" />
+                <item android:title="@string/category_biography" />
+                <item android:title="@string/category_history" />
+                <item android:title="@string/category_health" />
+                <item android:title="@string/category_academics" />
+                <item android:title="@string/category_science" />
+                <item android:title="@string/category_technology" />
+                <item android:title="@string/category_politics" />
+                <item android:title="@string/category_sports" />
+                <item android:title="@string/category_unknown" />
+            </menu>
+        </item>
+    </group>
+</menu>

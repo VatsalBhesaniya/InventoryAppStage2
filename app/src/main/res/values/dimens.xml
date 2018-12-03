@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="padding_0dp">0dp</dimen>
+    <dimen name="padding_4dp">4dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="padding_16dp">16dp</dimen>
+    <dimen name="margin_1dp">1dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_negative_8dp">-8dp</dimen>
+    <dimen name="width_0dp">0dp</dimen>
+    <dimen name="width_1dp">1dp</dimen>
+    <dimen name="height_0dp">0dp</dimen>
+    <dimen name="listview_bottom_padding">80dp</dimen>
+    <dimen name="btn_radius_4dp">4dp</dimen>
+</resources>

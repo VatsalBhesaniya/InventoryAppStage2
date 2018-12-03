@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pt_sans_caption"
+            android:text="@string/book_name"
+            android:textSize="@dimen/text_size_16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_book_name"
+            style="@style/EditorEditTextStyle"
+            android:hint="@string/book_name"
+            android:inputType="textCapWords" />
+
+        <TextView
+            style="@style/EditorTextViewStyle"
+            android:text="@string/book_category" />
+
+        <Spinner
+            android:id="@+id/spinner_category"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_negative_8dp"
+            android:layout_marginLeft="@dimen/margin_negative_8dp"
+            android:paddingStart="@dimen/padding_0dp"
+            android:paddingLeft="@dimen/padding_0dp"
+            android:paddingEnd="@dimen/padding_0dp"
+            android:paddingRight="@dimen/padding_0dp"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            style="@style/EditorTextViewStyle"
+            android:text="@string/book_price" />
+
+        <EditText
+            android:id="@+id/edit_book_price"
+            style="@style/EditorEditTextStyle"
+            android:hint="@string/book_price"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="@dimen/width_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/EditorTextViewStyle"
+                    android:text="@string/book_quantity" />
+
+                <EditText
+                    android:id="@+id/edit_book_quantity"
+                    style="@style/EditorEditTextStyle"
+                    android:hint="@string/book_quantity"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/width_0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/increase_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_0dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/editor_btn_increase_quantity"
+                    android:src="@drawable/ic_increase" />
+
+                <ImageButton
+                    android:id="@+id/decrease_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_0dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/editor_btn_decrease_quantity"
+                    android:src="@drawable/ic_decrease" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/EditorTextViewStyle"
+            android:text="@string/book_supplier_name" />
+
+        <EditText
+            android:id="@+id/edit_book_supplier_name"
+            style="@style/EditorEditTextStyle"
+            android:hint="@string/book_supplier_name"
+            android:inputType="textCapWords" />
+
+        <TextView
+            style="@style/EditorTextViewStyle"
+            android:text="@string/book_supplier_phone_number" />
+
+        <EditText
+            android:id="@+id/edit_book_supplier_phone_number"
+            style="@style/EditorEditTextStyle"
+            android:hint="@string/book_supplier_phone_number"
+            android:inputType="phone" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_16dp"
+            android:background="@drawable/button_rounded"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="@dimen/padding_8dp"
+            android:gravity="center"
+            android:onClick="phoneCall"
+            android:padding="@dimen/padding_8dp"
+            android:text="@string/btn_order_book_text"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_16sp" />
+
+    </LinearLayout>
+
+</ScrollView>
